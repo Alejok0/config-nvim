@@ -1,0 +1,2 @@
+# config-nvim
+Esta es mi configuracion del editor de código Neovim, cada linea esta marcada con una pequeña descripcion respecto a su funcionamiento, ademas incluyo un script en python donde se puede mover el archivo de configuracion de manera automatica, tambien (y lo realmente importante) instala los complementos necesarios para el funcionamiento de la configuracion, dichos complementos estan descritos a lo largo de la ejecuion (y dentro) del script
