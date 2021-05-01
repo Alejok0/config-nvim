@@ -2,16 +2,19 @@ import os
 import sys
 
 def carpetaInit():
-    if !(os.path.isdir('~/.config'):
+    try:
         os.system("mkdir ~/.config/nvim")
-        carpetaInit()
-        if !(os.path.isdir('~/.config/nvim'):
-            os.system("mkdir ~/.config")
-            carpetaInit()
+    except:
+        print("No se ha creado .config")
+    
+    try:
+        os.system("mkdir ~/.config")
+    except:
+        print("No se ha crado nvim")
 
 def moverArchivo():
     os.system("cp init.vim ~/.config/nvim")
-    if(os.path.isfile('~/.config/nvim/init.vim')
+    if(os.path.isfile('~/.config/nvim/init.vim')):
         return True
     else:
         return False
@@ -37,7 +40,7 @@ print("Creando la carpeta para init.vim . . .")
 carpetaInit()
 
 print("Moviendo init.vim . . .")
-if(moverArchivo):
+if(moverArchivo()):
     print("El archivo se movió correctamente")
 else:
     print("El archivo NO se movió correctamente")
@@ -50,8 +53,8 @@ print("Instalando el plugin que muestra identacion . . .")
 os.system("git clone https://github.com/Yggdroot/indentLine.git ~/.vim/pack/vendor/start/indentLine")
 os.system('vim -u NONE -c "helptags  ~/.vim/pack/vendor/start/indentLine/doc" -c "q"')
 
-print("Para instalar el Plugin de auto completado es necesatio"
-print(" instalar node.js para ello necesitamos acceso"
+print("Para instalar el Plugin de auto completado es necesatio")
+print(" instalar node.js para ello necesitamos acceso")
 print("de super usuario")
 os.system("sudo echo Permiso de super usuario consedido")
 instalarNode()
