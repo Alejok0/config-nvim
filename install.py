@@ -14,7 +14,7 @@ def carpetaInit():
 
 def moverArchivo():
     os.system("cp init.vim ~/.config/nvim")
-    if(os.path.isfile('~/.config/nvim/init.vim')):
+    if(os.path.exists('~/.config/nvim/init.vim')):
         return True
     else:
         return False
