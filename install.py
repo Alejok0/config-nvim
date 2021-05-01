@@ -3,12 +3,12 @@ import sys
 
 def carpetaInit():
     try:
-        os.system("mkdir ~/.config/nvim")
+        os.system("mkdir ~/.config")
     except:
         print("No se ha creado .config")
     
     try:
-        os.system("mkdir ~/.config")
+        os.system("mkdir ~/.config/nvim")
     except:
         print("No se ha crado nvim")
 
