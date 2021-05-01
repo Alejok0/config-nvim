@@ -31,6 +31,7 @@
 "Configuraciones de pluggins recuerda usar :PlugInstall
   colorscheme gruvbox "Activa el tema instalado(Gruvbox)
   let g:gruvbox_contrast_dark = "hard" "Selecciona la paleta de colores del tema
+  let mapleader="ñ" "Esta es la tecla lider, es una tecla que siempre reconocen los pluggins
   "Se invoca con la tecla lider y la letra s y busca los 3 caracteres que ingresemos
   nmap <leader>s <Plug>(easymotion-s3)
   "Se invoca con la tecla lider y la letra o
@@ -46,7 +47,6 @@
   autocmd FileType py nmap <leader>c :! cd '%:p:h' && python3 '%:t' <CR>
 
 "Mis atajos de teclado personalizados
-  let mapleader="ñ" "Esta es la tecla lider, es una tecla que siempre reconocen los pluggins
   "Cambio la tecla de cambio de modo desde Escape a hh
   inoremap hh <Esc>
   "La tecla lider mas la w ingresa un :W y un enter con <CR>(Guarda el archivo)
