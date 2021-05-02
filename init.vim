@@ -14,7 +14,6 @@
   set tabstop=2 "Una tabulacion vale 2 espacios
   set shiftwidth=2 "Cuando idento con shift y '>', usa 2 espacios
   set expandtab "Cuando precione tabulador se eXPande
-  let g:identLine_char = '|' "Este es el caracter con el que se identa
   set cursorcolumn "Esto genera un color diferente en la columnas donde se encuentre
   set cursorline "Esto permite mostrar un color diferente en la linea que se encuntre
 
@@ -26,12 +25,14 @@
   Plug 'christoomey/vim-tmux-navigator' "Este pluggin nos permite navegar entre ventanas dentro de la misma consola con Ctrl + H,J,K,L
   Plug 'neoclide/coc.nvim', {'branch': 'relase'} "Este Pliggin permite el auto-completado, recuerda instalar node.js
   Plug 'mattn/emmet-vim' "Este pluggin sive para el desrrollo web front-end(html y css) recuerda usar :CocInstall coc-emmet
+  Plug 'Yggdroot/identLine'
   call plug#end() "Cierra la llamada al gestor de pluggins
 
 "Configuraciones de pluggins recuerda usar :PlugInstall
   colorscheme gruvbox "Activa el tema instalado(Gruvbox)
   let g:gruvbox_contrast_dark = "hard" "Selecciona la paleta de colores del tema
   let mapleader="ñ" "Esta es la tecla lider, es una tecla que siempre reconocen los pluggins
+  let g:identLine_char = '|' "Este es el caracter con el que se identa
   "Se invoca con la tecla lider y la letra s y busca los 3 caracteres que ingresemos
   nmap <leader>s <Plug>(easymotion-s3)
   "Se invoca con la tecla lider y la letra o
