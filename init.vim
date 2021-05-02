@@ -25,7 +25,7 @@
   Plug 'christoomey/vim-tmux-navigator' "Este pluggin nos permite navegar entre ventanas dentro de la misma consola con Ctrl + H,J,K,L
   Plug 'neoclide/coc.nvim', {'branch': 'relase'} "Este Pliggin permite el auto-completado, recuerda instalar node.js
   Plug 'mattn/emmet-vim' "Este pluggin sive para el desrrollo web front-end(html y css) recuerda usar :CocInstall coc-emmet
-  Plug 'Yggdroot/identLine'
+  Plug 'https://github.com/Yggdroot/indentLine.git' "Este Plugin permite mostrar la identacion
   call plug#end() "Cierra la llamada al gestor de pluggins
 
 "Configuraciones de pluggins recuerda usar :PlugInstall
