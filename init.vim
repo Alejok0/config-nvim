@@ -63,3 +63,9 @@
   nmap <leader>l $
   "Va al inicio de la linea
   nmap <leader>h ^
+  "Mantiene la seleccion luego de indentar
+  vnoremap < <gv
+  vnoremap > >gv
+  "Mueve bloques de codigo en modo visual o V-Line (Presiona Shift)
+  xnoremap K :move '<-2<CR>gv-gv
+  xnoremap J :move '>+1<CR>gv-gv
