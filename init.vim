@@ -73,3 +73,7 @@
   "Mueve bloques de codigo en modo visual o V-Line (Presiona Shift)
   xnoremap K :move '<-2<CR>gv-gv
   xnoremap J :move '>+1<CR>gv-gv
+  "Navegacion entre archivos con Tabulador
+  nnoremap <silent> <TAB> :bnext<CR>
+  nnoremap <silent> <S-TAB> :bprevious<CR>
+
