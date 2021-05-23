@@ -30,6 +30,7 @@
   Plug 'neoclide/coc.nvim', {'branch': 'relase'} "Este Pliggin permite el auto-completado, recuerda instalar node.js
   Plug 'mattn/emmet-vim' "Este pluggin sive para el desrrollo web front-end(html y css) recuerda usar :CocInstall coc-emmet
   Plug 'https://github.com/Yggdroot/indentLine.git' "Este Plugin permite mostrar la identacion
+  Plug 'vim-airline/vim-airline' "Este Plugin cambia la barra de abajo y añade una barra arriba(indica los buffers abiertos)
   call plug#end() "Cierra la llamada al gestor de pluggins
 
 "Configuraciones de pluggins recuerda usar :PlugInstall
@@ -45,10 +46,13 @@
   let g:deoplete#enable_at_startup = 1 "Esto activa el auto completado en general
   let g:user_emmet_leader_key=' ' "Esta es la tecla lider de emmet, pondre la misma de todos los pluggins
   let g:user_emmet_install_global = 0 "Estas dos lineas hacen que solo funcione en archivos html, css y php
+  "Esto configura la barra de arriba que indica los buffers(Archivos) actuales
+  let g:airline#extensions#tabline#enabled = 1 "Se activa dicha barra
+  let g:airline#extensions#tabline#formatter = 'default' "Se escoje el tema default
   "Se invocan las funciones de emmet
   autocmd FileType html,css,php EmmetInstall
 
-"Estas son las validaciones para compilar el código
+"Estas son las validaciones para compilar el código (Soló validas en linux)
   autocmd FileType cpp nmap <leader>c :! cd '%:p:h' && g++ '%:t' -o '%:t.compiled'<CR>
   autocmd FileType c nmap <leader>c :! cd '%:p:h' && cpp '%:t' -o '%:t.compiled'<CR>
 
