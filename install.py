@@ -46,8 +46,8 @@ else:
     print("El archivo NO se movió correctamente")
 
 print("Instalando el gestor de Plugins . . .")
-os.system("curl -fLo ~/.var/app/io.neovim.nvim/data/nvim/site/autoload/plug.vim \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim")
+os.system('sh -c "curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"')
 
 print("Instalando el plugin que muestra identacion . . .")
 os.system("git clone https://github.com/Yggdroot/indentLine.git ~/.vim/pack/vendor/start/indentLine")
