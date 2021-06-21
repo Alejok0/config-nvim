@@ -36,6 +36,7 @@
 "Configuraciones de pluggins recuerda usar :PlugInstall
   colorscheme gruvbox "Activa el tema instalado(Gruvbox)
   let g:gruvbox_contrast_dark = "hard" "Selecciona la paleta de colores del tema
+  set bg=dark "Esto selecciona el fondo oscuro en el tema (Esto por compatibilidad con Vim)
   let mapleader=" " "Esta es la tecla lider, es una tecla que siempre reconocen los pluggins
   let g:identLine_char = '|' "Este es el caracter con el que se identa
   "Se invoca con la tecla lider y la letra s y busca los 3 caracteres que ingresemos
