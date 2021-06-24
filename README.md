@@ -1,5 +1,9 @@
 # config-nvim
-Esta es mi configuracion del editor de código Neovim, cada linea esta marcada con una pequeña descripcion respecto a su funcionamiento, ademas incluyo un script en python donde se puede mover el archivo de configuracion de manera automatica, tambien (y lo realmente importante) instala los complementos necesarios para el funcionamiento de la configuracion, dichos complementos estan descritos a lo largo de la ejecuion (y dentro) del script
+Esta es mi configuracion del editor de código Neovim
+
+![Vista previa](https://github.com/Alejok0/config-nvim/blob/CapturaVistaPrevia.png?raw=true)
+
+cada linea esta marcada con una pequeña descripcion respecto a su funcionamiento, ademas incluyo un script en python donde se puede mover el archivo de configuracion de manera automatica, tambien (y lo realmente importante) instala los complementos necesarios para el funcionamiento de la configuracion, dichos complementos estan descritos a lo largo de la ejecuion (y dentro) del script
 
 # installVimPlug.py
 Este script esta programado en python, sirve para instalar la configuracion de Neovim, instala el paquete plug-vim que a su vez este permite la instalacion de las extenciones como nerdtree o el autocompletado, hablando de este, es necesaria es la instalacion de "Node js" para el autocompletado, nobstante este mismo puede ser desactivado buscando dentro del archivo .vimrc la linea que contenga `Plug neoclide/coc.vim` y borrandolo o comentandolo con unas comillas dobles al inicio de la linea.
