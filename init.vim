@@ -31,6 +31,7 @@
   Plug 'mattn/emmet-vim' "Este pluggin sive para el desrrollo web front-end(html y css) recuerda usar :CocInstall coc-emmet
   Plug 'https://github.com/Yggdroot/indentLine.git' "Este Plugin permite mostrar la identacion
   Plug 'vim-airline/vim-airline' "Este Plugin cambia la barra de abajo y añade una barra arriba(indica los buffers abiertos)
+  Plug 'vimsence/vimsence' "Esto permite mostrar un mensaje de estado en Discord
   call plug#end() "Cierra la llamada al gestor de pluggins
 
 "Configuraciones de pluggins recuerda usar :PlugInstall
