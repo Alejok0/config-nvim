@@ -65,6 +65,10 @@
   nmap <leader>w :w<CR>
   "La tecla lider mas la q ingresa un :q y un enter(Esto sirve para salir)
   nmap <leader>q :q<CR>
+  "Agrego un atajo para dar formato a todo el código
+  map <A-F> gg=G
+  "Cambio la syntaxis de autocompletado
+  inoremap <C-Space> <C-n>
   "Va al inicio de la linea
   nmap <leader>l $
   "Va al inicio de la linea
