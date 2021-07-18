@@ -46,7 +46,7 @@
   nmap <leader>o :NERDTreeFind<CR>
   let NERDTreeQuitOnOpen=1 "Esto cierra el menu de directorios cuando abrimos un archivo
   let g:deoplete#enable_at_startup = 1 "Esto activa el auto completado en general
-  let g:user_emmet_leader_key=' ' "Esta es la tecla lider de emmet, pondre la misma de todos los pluggins
+  let g:user_emmet_leader_key='ñ' "Esta es la tecla lider de emmet
   let g:user_emmet_install_global = 0 "Estas dos lineas hacen que solo funcione en archivos html, css y php
   "Esto configura la barra de arriba que indica los buffers(Archivos) actuales
   let g:airline#extensions#tabline#enabled = 1 "Se activa dicha barra
