@@ -46,15 +46,20 @@
   nmap <leader>o :NERDTreeFind<CR>
   let NERDTreeQuitOnOpen=1 "Esto cierra el menu de directorios cuando abrimos un archivo
   let g:deoplete#enable_at_startup = 1 "Esto activa el auto completado en general
+  let g:coc_global_extensions = [
+      \ 'coc-json',
+      \ 'coc-tsserver',
+      \ 'coc-python'
+      \ ] "Esto instala de manera automatica el autocompletado en Python y JS
   let g:user_emmet_leader_key='ñ' "Esta es la tecla lider de emmet
   let g:user_emmet_install_global = 0 "Estas dos lineas hacen que solo funcione en archivos html, css y php
   "Esto configura la barra de arriba que indica los buffers(Archivos) actuales
   let g:airline#extensions#tabline#enabled = 1 "Se activa dicha barra
   let g:airline#extensions#tabline#formatter = 'default' "Se escoje el tema default
-  "Se invocan las funciones de emmet
+  "Se invocan las funciones de emmet en archivos html, css y php
   autocmd FileType html,css,php EmmetInstall
 
-"Estas son las validaciones para compilar el código (Soló validas en linux)
+"Estas son las validaciones para compilar el código en C y C++ (Soló validas en linux)
   autocmd FileType cpp nmap <leader>c :! cd '%:p:h' && g++ '%:t' -o '%:t.compiled'<CR>
   autocmd FileType c nmap <leader>c :! cd '%:p:h' && cpp '%:t' -o '%:t.compiled'<CR>
 
