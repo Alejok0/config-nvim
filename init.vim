@@ -23,18 +23,19 @@
 
 "Gestor de pligins, gestor actual:junegunn/vim-plug
   call plug#begin('~/.vim/plugged') "Esto manda a traer el gestor de pluggins instalado
-  Plug 'morhetz/gruvbox' "Este es el tema que uso
+  Plug 'morhetz/gruvbox' "Este es el tema de que uso (La paleta de colores del editor de código)
   Plug 'easymotion/vim-easymotion' "EasyMotion, pluggin de movimiento
-  Plug 'scrooloose/nerdtree' "Este pluggin nos permite ver diRectorios
+  Plug 'scrooloose/nerdtree' "Este pluggin nos permite ver directorios y cambiar entre archivos
   Plug 'christoomey/vim-tmux-navigator' "Este pluggin nos permite navegar entre ventanas dentro de la misma consola con Ctrl + H,J,K,L
   Plug 'neoclide/coc.nvim', {'branch': 'relase'} "Este Pliggin permite el auto-completado, recuerda instalar node.js
-  Plug 'mattn/emmet-vim' "Este pluggin sive para el desrrollo web front-end(html y css) recuerda usar :CocInstall coc-emmet
+  Plug 'mattn/emmet-vim' "Este pluggin sive para el desrrollo web front-end(html y css)
   Plug 'https://github.com/Yggdroot/indentLine.git' "Este Plugin permite mostrar la identacion
   Plug 'vim-airline/vim-airline' "Este Plugin cambia la barra de abajo y añade una barra arriba(indica los buffers abiertos)
   Plug 'vimsence/vimsence' "Esto permite mostrar un mensaje de estado en Discord
+  plug 'jiangmiao/auto-pairs' "Esto es un autocompletado de llaves, corchetes, parentesis, etc.
   call plug#end() "Cierra la llamada al gestor de pluggins
 
-"Configuraciones de pluggins recuerda usar :PlugInstall
+"Configuraciones de pluggins, recuerda usar ':PlugInstall' la primera vez que se use la configuracion 
   colorscheme gruvbox "Activa el tema instalado(Gruvbox)
   let g:gruvbox_contrast_dark = "hard" "Selecciona la paleta de colores del tema
   set bg=dark "Esto selecciona el fondo oscuro en el tema (Esto por compatibilidad con Vim)
@@ -54,8 +55,8 @@
   let g:user_emmet_leader_key='ñ' "Esta es la tecla lider de emmet
   let g:user_emmet_install_global = 0 "Estas dos lineas hacen que solo funcione en archivos html, css y php
   "Esto configura la barra de arriba que indica los buffers(Archivos) actuales
-  let g:airline#extensions#tabline#enabled = 1 "Se activa dicha barra
-  let g:airline#extensions#tabline#formatter = 'default' "Se escoje el tema default
+  let g:airline#extensions#tabline#enabled = 1 "Se activa la barra de estado
+  let g:airline#extensions#tabline#formatter = 'default' "Se escoje el tema default de la barra de estado
   "Se invocan las funciones de emmet en archivos html, css y php
   autocmd FileType html,css,php EmmetInstall
 
