@@ -29,10 +29,10 @@
   Plug 'christoomey/vim-tmux-navigator' "Este pluggin nos permite navegar entre ventanas dentro de la misma consola con Ctrl + H,J,K,L
   Plug 'neoclide/coc.nvim', {'branch': 'relase'} "Este Pliggin permite el auto-completado, recuerda instalar node.js
   Plug 'mattn/emmet-vim' "Este pluggin sive para el desrrollo web front-end(html y css)
-  Plug 'Yggdroot/indentLine'' "Este Plugin permite mostrar la identacion
+  Plug 'Yggdroot/indentLine' "Este Plugin permite mostrar la identacion
   Plug 'vim-airline/vim-airline' "Este Plugin cambia la barra de abajo y añade una barra arriba(indica los buffers abiertos)
   Plug 'vimsence/vimsence' "Esto permite mostrar un mensaje de estado en Discord
-  plug 'jiangmiao/auto-pairs' "Esto es un autocompletado de llaves, corchetes, parentesis, etc.
+  Plug 'jiangmiao/auto-pairs' "Esto es un autocompletado de llaves, corchetes, parentesis, etc.
   call plug#end() "Cierra la llamada al gestor de pluggins
 
 "Configuraciones de pluggins, recuerda usar ':PlugInstall' la primera vez que se use la configuracion 
