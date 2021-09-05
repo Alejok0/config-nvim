@@ -6,7 +6,7 @@
   syntax enable
   set laststatus =2 "Esto permite mostrar la barra de estado
   set showcmd "Muestra lo que se esta ejecutando en consola
-  set ruler
+  set number relativenumber "Muesta la distancia entre las lineas de codigo respecto a la actual
   set encoding=utf-8 "Codificacion utf8 que activa las ñ y acentos
   set showmatch
 
@@ -27,7 +27,7 @@
   Plug 'easymotion/vim-easymotion' "EasyMotion, pluggin de movimiento
   Plug 'scrooloose/nerdtree' "Este pluggin nos permite ver directorios y cambiar entre archivos
   Plug 'christoomey/vim-tmux-navigator' "Este pluggin nos permite navegar entre ventanas dentro de la misma consola con Ctrl + H,J,K,L
-  Plug 'neoclide/coc.nvim', {'branch': 'relase'} "Este Pliggin permite el auto-completado, recuerda instalar node.js
+  Plug 'neoclide/coc.nvim', {'branch': 'release'} "Este Pliggin permite el auto-completado, recuerda instalar node.js
   Plug 'mattn/emmet-vim' "Este pluggin sive para el desrrollo web front-end(html y css)
   Plug 'Yggdroot/indentLine' "Este Plugin permite mostrar la identacion
   Plug 'vim-airline/vim-airline' "Este Plugin cambia la barra de abajo y añade una barra arriba(indica los buffers abiertos)
