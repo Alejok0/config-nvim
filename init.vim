@@ -51,7 +51,8 @@
       \ 'coc-json',
       \ 'coc-tsserver',
       \ 'coc-python',
-      \ 'coc-lua'
+      \ 'coc-lua',
+      \ 'coc-clangd',
       \ ] "Esto instala de manera automatica el autocompletado en Python y JS
   let g:user_emmet_leader_key='ñ' "Esta es la tecla lider de emmet
   let g:user_emmet_install_global = 0 "Estas dos lineas hacen que solo funcione en archivos html, css y php
